@@ -1,5 +1,13 @@
 # This package is the TS|JS version of [this](https://github.com/taka-4602/Pix-Chan/)
 
+[JA](https://github.com/omonukko/pix-chan-for-ts-js/#readme)
+
+Install
+
+```
+npm install @omoti/pix-ai
+```
+
 # Account Generation Codes:
 
 ```typescript
@@ -73,4 +81,12 @@ async function generateAndFetchMedia(prompt:string) {
 }
 
 generateAndFetchMedia("apple")
+```
+
+# Update Notes:
+
+```diff
+- Removed Recaptcha Logs
++ Added get_token() method // return this.token
++ Added README EN Version
 ```
