@@ -28,6 +28,7 @@ async function createPixAIAccount() {
         await pix.claimDailyQuota(); // Daily Quotaの取得
         await pix.claimQuestionnaireQuota(); // アンケートを答えるともらえるQuotaの取得
         console.log(await pix.getQuota()); // Quotaの表示正常だと28000Quotaもらえるはず
+        console.log(await pix.get_token()); // Tokenの表示
     } catch (error) {
         console.error(error);
     }
