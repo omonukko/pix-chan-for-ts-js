@@ -17,15 +17,13 @@ async function sleep(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let pix:PixAI;
-
 async function createPixAIAccount() {
     try {
         await sleep(5000);
         const email = "example@example.com"
         const pass = "password"
         
-        pix = new PixAI(mail,pass,false); // If the last boolean is true, it becomes login.
+        const pix = new PixAI(mail,pass,false); // If the last boolean is true, it becomes login.
         
         await sleep(5000);
 
